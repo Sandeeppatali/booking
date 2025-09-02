@@ -16,7 +16,7 @@ const app = express();
 
 // ✅ Middlewares
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN?.split(",") || ["http://localhost:3000", "http://localhost:5173"],
+  origin: process.env.CLIENT_ORIGIN?.split(",") || ["https://localhost:3000", "https://localhost:5173"],
   credentials: true
 }));
 app.use(express.json());
